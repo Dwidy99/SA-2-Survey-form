@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap');
+
+:root {
+	--color-white: #f3f3f3;
+	--color-darkblue: #1b1b32;
+	--color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+	--color-green: #37af65;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(https://source.unsplash.com/random/1920x1080) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: 'Antonio', sans-serif;
+	font-style: normal;
+	display: grid;
+	place-content: center;
+}
+
+/* Container */
+.container {
+	border-radius: 5px;
+	color: var(--color-white, #fff);
+}
+
+header {
+	display: grid;
+	place-content: center;
+	text-align: center;
+}
+
+/* Header */
+header #title {
+	line-height: 1px;
+}
+
+header #description {
+	font-style: italic;
+}
+
+header #title,
+header #description {
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Form */
+#survey-form {
+	/* display: flex;
+	flex-direction: column; */
+	padding: 20px;
+	width: 500px;
+	background-color: rgba(27, 27, 50, 0.8);
+}
+
+.form-group {
+	display: grid;
+	justify-content: center;
+}
+
+.form-group label,
+.form-group input {
+	margin: 5px 0;
+	width: 450px;
+}
+
+.form-group select {
+	width: 470px;
+	height: 44px;
+}
+
+/* Radio */
+.text-radio {
+	margin-left: -8px;
+}
+
+.label input {
+	margin-left: -25px;
+	width: 50px;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 600px) {
+	.container {
+		max-width: 540px;
+		margin: 15px 25px;
+	}
+
+	#survey-form {
+		width: 400px;
+	}
+
+	.form-group label,
+	.form-group input {
+		width: 350px;
+	}
+
+	.form-group select {
+		width: 365px;
+	}
+}

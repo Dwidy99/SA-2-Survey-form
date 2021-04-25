@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Survey Form</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1 id="title" class="text-center">Please Review Us</h1>
+				<p id="description" class="description">
+					Please let us know how was the food and service
+				</p>
+			</header>
+			<form id="survey-form">
+				<div class="form-group">
+					<label class="label-" id="name-label" for="name">Name</label>
+					<input
+						type="text"
+						name="name"
+						id="name"
+						placeholder="Name"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<label class="label-" id="email-label" for="email">Email</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Email"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<label class="label-" id="number-label" for="age"
+						>Age (optional)</label
+					>
+					<input
+						type="number"
+						name="age"
+						id="age"
+						min="1"
+						max="100"
+						placeholder="Age"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<p>Which optional best describes your current role?</p>
+					<select name="role" id="dropdown" required>
+						<option selected="" value="">Select current role</option>
+						<option value="student">Student</option>
+						<option value="job">Full Time Job</option>
+						<option value="learner">Full Time Job</option>
+						<option value="other">Other</option>
+						<option value="preferNo">Prefer No to Say</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<p class="text-radio">
+						Would you recommend this restaurant to a friend or family
+					</p>
+					<label class="label" for="definitely">
+						<input
+							type="radio"
+							name="user-recommend"
+							id="definitely"
+							checked=""
+						/>Definitely
+					</label>
+					<label class="label" for="maybe">
+						<input type="radio" name="user-recommend" id="maybe" />Maybe
+					</label>
+					<label class="label" for="notSure">
+						<input type="radio" name="user-recommend" id="nitsure" />Not Sure
+					</label>
+				</div>
+				<div class="form-group"></div>
+				<div class="form-group"></div>
+				<div class="form-group"></div>
+				<div class="form-group"></div>
+			</form>
+		</div>
+	</body>
+</html>
