@@ -65,25 +65,30 @@ header #description {
 }
 
 .form-group label,
-.form-group input {
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='number'] {
 	margin: 5px 0;
-	width: 450px;
+	height: 20px;
+	width: 470px;
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
 }
 
 .form-group select {
-	width: 470px;
-	height: 44px;
+	margin: 5px 0;
+	height: 35px;
+	width: 475px;
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
 }
 
 /* Radio */
-.text-group {
-	text-align: left;
-	margin-left: -10px;
-}
 
 .label input {
-	margin-left: -25px;
-	width: 50px;
+	width: 30px;
 }
 
 /* Button */
@@ -110,16 +115,15 @@ header #description {
 	}
 
 	.form-group label,
-	.form-group input {
-		width: 300px;
+	.form-group input[type='text'],
+	.form-group input[type='email'],
+	.form-group input[type='number'],
+	.form-group select {
+		width: 350px;
 	}
 
 	.form-group select {
-		width: 325px;
-	}
-
-	.text-group {
-		margin-left: -10px;
+		width: 355px;
 	}
 
 	.label input {
@@ -127,6 +131,10 @@ header #description {
 	}
 
 	.form-group textarea {
-		width: 315px;
+		width: 320px;
+	}
+
+	.form-group button {
+		width: 340px;
 	}
 }
