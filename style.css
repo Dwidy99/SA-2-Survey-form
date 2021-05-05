@@ -17,34 +17,32 @@ body {
 	background: url(https://source.unsplash.com/random/1920x1080) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center;
 	font-family: 'Antonio', sans-serif;
 	font-style: normal;
-	display: grid;
-	place-content: center;
 }
 
 /* Container */
 .container {
-	border-radius: 5px;
+	max-width: 700px;
 	color: var(--color-white, #fff);
 	font-size: 14px;
-	margin: 100px;
+	margin: 50px auto;
 }
 
 header {
-	display: grid;
-	place-content: center;
 	text-align: center;
 }
 
 /* Header */
 header #title {
-	line-height: 1px;
+	line-height: 1em;
+	font-size: 2.5rem;
 }
 
 header #description {
+	font-size: 1.2rem;
 	font-style: italic;
+	line-height: 0em;
 }
 
 header #title,
@@ -54,87 +52,53 @@ header #description {
 
 /* Form */
 #survey-form {
-	padding: 20px;
-	width: 500px;
+	display: grid;
+	gap: 20px;
+	padding: 35px;
 	background-color: rgba(27, 27, 50, 0.8);
+	margin-top: 35px;
+}
+
+#survey-form label,
+.form-group p {
+	font-size: 1.2em;
+	margin: 10px 0;
 }
 
 .form-group {
 	display: grid;
 	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
-.form-group label,
 .form-group input[type='text'],
 .form-group input[type='email'],
-.form-group input[type='number'] {
-	margin: 5px 0;
-	height: 20px;
-	width: 470px;
+.form-group input[type='number'],
+.form-group textarea {
+	height: 30px;
+	padding: 5px 10px;
 	border-radius: 5px;
 	border: none;
-	padding: 5px;
 }
 
 .form-group select {
-	margin: 5px 0;
-	height: 35px;
-	width: 475px;
+	height: 40px;
+	padding: 5px 10px;
 	border-radius: 5px;
 	border: none;
-	padding: 5px;
 }
 
-/* Radio */
-
-.label input {
-	width: 30px;
+.form-group textarea {
+	height: 100px;
 }
 
 /* Button */
 .form-group button {
-	width: 465px;
-	margin: 20px 0;
 	background-color: var(--color-green, #37af65);
 	border: none;
 	color: var(--color-white, #fff);
 	border-radius: 3px;
-	padding: 10px 32px;
+	padding: 15px 0;
 	cursor: pointer;
-}
-
-/* Responsive Breakpoint */
-@media (max-width: 600px) {
-	.container {
-		max-width: 540px;
-		margin: 15px 25px;
-	}
-
-	#survey-form {
-		width: 350px;
-	}
-
-	.form-group label,
-	.form-group input[type='text'],
-	.form-group input[type='email'],
-	.form-group input[type='number'],
-	.form-group select {
-		width: 350px;
-	}
-
-	.form-group select {
-		width: 355px;
-	}
-
-	.label input {
-		width: 50px;
-	}
-
-	.form-group textarea {
-		width: 320px;
-	}
-
-	.form-group button {
-		width: 340px;
-	}
+	margin-bottom: 50px;
 }
